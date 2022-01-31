@@ -33,6 +33,7 @@ function createTable(tableData) {
 
   table.appendChild(tableBody);
   table.style.border = 'solid 1px black';
+  table.style.width = "30%" ;
   document.body.appendChild(table);
 }
 
