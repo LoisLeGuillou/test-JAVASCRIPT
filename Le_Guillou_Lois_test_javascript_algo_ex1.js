@@ -4,7 +4,7 @@ var to_check = new Array(9);
 //passer d'un tableau de caractères à un tableau de chiffres
 
 function getNumbers(stringArray, numberArray) {
-    for (let i=0 ; i<stringArray.length ; i++) {
+    for (var i=0 ; i<stringArray.length ; i++) {
         numberArray[i] = stringArray[i].split(' ').map(x=>+x);
     }
 }
