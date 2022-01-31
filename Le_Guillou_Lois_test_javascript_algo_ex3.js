@@ -1,4 +1,3 @@
-
 var errorTable = document.createElement('table');
 errorTable.setAttribute('id','error');
 var errorTableBody = document.createElement('tbody');
@@ -14,14 +13,14 @@ function checkRows (funcDiff, array) {
             Ligne = array[i];
             var row = document.createElement('tr');
             var cell = document.createElement('td');
-            var errorLine = 'Line ' + i+1 + ' incorrect';
+            var errorLine = 'Line ' + (i+1) + ' incorrect';
             cell.appendChild(document.createTextNode(errorLine));
             Ligne.forEach(function(cellData) {
                 var cell = document.createElement('td');
                 cell.appendChild(document.createTextNode(cellData));
                 row.appendChild(cell);
             })
-            errorTableBoby.appendChild(row);
+            errorTableBody.appendChild(row);
         }
     }
     
