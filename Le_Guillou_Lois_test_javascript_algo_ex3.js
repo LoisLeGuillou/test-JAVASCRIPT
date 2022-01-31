@@ -12,10 +12,7 @@ function checkRows (funcDiff, array) {
         } else {
             Ligne = array[i];
             var row = document.createElement('tr');
-            var cell = document.createElement('td');
-            var errorLine = 'Line ' + (i+1) + ' incorrect';
-            cell.appendChild(document.createTextNode(errorLine));
-            
+	    row.appendChild(document.createTextNode('Line ' + (i+1) + ' incorrect'));
             Ligne.forEach(function(cellData) {
                 var cell = document.createElement('td');
                 cell.appendChild(document.createTextNode(cellData));
