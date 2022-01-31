@@ -15,6 +15,7 @@ function checkRows (funcDiff, array) {
             var cell = document.createElement('td');
             var errorLine = 'Line ' + (i+1) + ' incorrect';
             cell.appendChild(document.createTextNode(errorLine));
+            
             Ligne.forEach(function(cellData) {
                 var cell = document.createElement('td');
                 cell.appendChild(document.createTextNode(cellData));
