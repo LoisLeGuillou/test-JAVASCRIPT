@@ -23,6 +23,7 @@ function createTable(tableData) {
 
     rowData.forEach(function(cellData) {
       var cell = document.createElement('td');
+      cell.style.border = 'solid 1px black';
       cell.appendChild(document.createTextNode(cellData));
       row.appendChild(cell);
     });
@@ -31,6 +32,7 @@ function createTable(tableData) {
   });
 
   table.appendChild(tableBody);
+  table.style.border = 'solid 1px black';
   document.body.appendChild(table);
 }
 
